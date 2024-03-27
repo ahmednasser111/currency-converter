@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>currency</title>
+</head>
+<body>
+	<div class="input-group">
+		<label for="amount">Amount:</label>
+		<input type="number" name="amount" id="amount" aria-label="Amount">
+	</div>
+	<div class="input-group">
+		<label for="from">From:</label>
+		<select name="from" id="from" title="From" aria-label="From currency">
+		</select>
+	</div>
+	<div class="input-group">
+		<label for="to">To:</label>
+		<select name="to" id="to" title="To" aria-label="To currency">
+		</select>
+	</div>
+	<input type="submit" value="Send" id="send-button" aria-label="Send">
+	<div class="result" id="result" aria-live="assertive" aria-atomic="true">Please enter an amount.</div>
+	<script src="main.js"></script>
+</body>
+</html>
